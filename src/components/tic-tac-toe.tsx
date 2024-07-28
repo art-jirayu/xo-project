@@ -143,7 +143,7 @@ export const TicTacToe = () => {
 
     return gameState === GAME_STATES.notStarted ? (
         <Inner>
-            <h1> Tic-Tac-Toe</h1>
+            <h1> XO Game</h1>
             <ButtonRow>
                 <Input onChange={changeRows} value={rows} />
                 <p>x</p>
@@ -155,7 +155,7 @@ export const TicTacToe = () => {
         </Inner>
     ) : (
         <Inner>
-            <h1> Tic-Tac-Toe</h1>
+            <h1> XO Game</h1>
             <Board board={board} handleClick={handleOnClick} column={columns} />
             {winner && <p>{winner === "X" ? "You Win" : "AI Wins"}</p>}
             {isNoWinner && <p> No one wins</p>}
